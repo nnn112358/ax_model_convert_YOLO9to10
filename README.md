@@ -1,24 +1,32 @@
 # ax_model_convert_YOLO9to10
 
 
-## Docker
+### Dockerの起動
 
-Dockerのロード
-
-```
-$ sudo docker load -i ax_pulsar2_3.2_patch1_temp_vlm.tar.gz
-```
-
-Dockerの起動
 ```
 $ sudo docker run -it --net host --rm -v $PWD:/data pulsar2:temp-58aa62e4
 ```
 
+### ultralyticsのインストール
 
 ```
-$ python yolo11_cut-onnx.py
+$ pip install ultralytics
+```
 
 
+### モデル変換の実施
+
+```
+$ python yolov10_download.py
+$ python yolov10_cut-onnx.py
+$ python yolov9_cut-onnx.py
+$ python yolov9_download.py
+$ ./ax_model_convert.sh
+```
+
+```
+# ls model/*axmodel
+model/yolov10n.axmodel  model/yolov10s.axmodel  model/yolov9s.axmodel  model/yolov9t.axmodel
 ```
 
 
