@@ -1,5 +1,12 @@
 # ax_model_convert_YOLO9to10
 
+## 目的
+[axera-tech](https://github.com/AXERA-TECH/ax-samples/)のサンプルプログラムの内、
+yolov9とyolov10のプログラムの実行に必要なモデルの変換を行う。
+ソースコードは、ax620e/ax_yolov9_ultralytics_steps.ccとax620e/ax_yolov10_ultralytics_steps.ccに対応する。
+
+https://github.com/AXERA-TECH/ax-samples/
+
 
 ### Dockerの起動
 
