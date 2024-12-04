@@ -1,6 +1,6 @@
 # ax_model_convert_YOLO9to10
 
-## 目的
+### 目的
 [axera-tech](https://github.com/AXERA-TECH/ax-samples/)のサンプルプログラムの内、
 yolov9とyolov10のプログラムの実行に必要なモデルの変換を行う。
 ソースコードは、ax620e/ax_yolov9_ultralytics_steps.ccとax620e/ax_yolov10_ultralytics_steps.ccに対応する。
@@ -37,7 +37,7 @@ model/yolov10n.axmodel  model/yolov10s.axmodel  model/yolov9s.axmodel  model/yol
 ```
 
 
-# LLM　モジュールでの実行
+### M5Stack Module-LLMでの実行
 
 ```
 ./ax_yolov10_u -i m52.jpg -m yolov10s.axmodel
